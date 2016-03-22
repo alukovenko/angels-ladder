@@ -11,7 +11,9 @@
     <h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a></h2>
     <i>{{ .Summary }}</i>
     {{ if .Truncated }}
-    <i><a href="{{ .Permalink }}">read more</a></i>
+    <div class="read-more">
+        <i><a href="{{ .Permalink }}">read more</a></i>
+    </div>
     {{ end }}
     <div class="meta">
       {{ .Date.Format "Jan 2, 2006" }} &nbsp;
