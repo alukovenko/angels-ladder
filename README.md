@@ -71,6 +71,7 @@ Details of each parameter are as follows.
 | copyright | no | Enter the copyright notice. If you do not enter, copyright display is hidden. |
 | analytics | no | Enter the tracking ID of Google analytics. If you do not enter, the analysis will be skipped. |
 | shareThis | no | Enter the publisher key of ShareThis. If you do not enter, the ShareThis buttons are hidden. |
+| googleSearch | no | Enter CSE ID of Google Custom Search. If you do not enter, the search will be hidden |
 
 
 ## Style Customization

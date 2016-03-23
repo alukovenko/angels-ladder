@@ -4,7 +4,12 @@
 <!-- Main Section Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <main id="index" role="main">
-  <div class="article-header light-gray"><h1>Recent Articles</h1></div>
+  <div class="article-header light-gray">
+    <h1 style="float: left">Recent Articles</h1>
+    <div style="float: right">
+    {{ with .Site.Params.googleSearch }}<gcse:search></gcse:search>{{ end }}
+    </div>
+  </div>
   {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
   {{ range $paginator.Pages }}
   <div class="summary">
