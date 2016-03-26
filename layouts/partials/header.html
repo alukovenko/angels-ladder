@@ -40,6 +40,10 @@
     <script type="text/javascript">stLight.options({publisher: '{{ . }}', doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
   {{ end }}
 
+  <!-- Favicon -->
+  {{ with .Site.Params.favicon16x16 }}<link rel="icon" type="image/png" href="{{ . }}" sizes="16x16">{{ end }}
+  {{ with .Site.Params.favicon32x32 }}<link rel="icon" type="image/png" href="{{ . }}" sizes="32x32">{{ end }}
+  {{ with .Site.Params.favicon96x96 }}<link rel="icon" type="image/png" href="{{ . }}" sizes="96x96">{{ end }}
 
 </head>
 
